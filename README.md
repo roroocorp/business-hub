@@ -1,1 +1,1 @@
-Site redesign: Vibrant Gradient theme applied (option A). Hero uses purple→cyan gradient, badges and colored course cards added. Images are Unsplash placeholders. If you want different images or a logo, send files and I will replace them.
+Design: Photo-centric full-bleed layout applied to index and courses. Major containers removed in hero and course grid. If you want different images or a logo, upload files and I will replace placeholders. To publish the site with GitHub Pages, activate Pages in repository settings (branch: main, folder: root).
