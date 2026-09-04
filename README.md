@@ -1,1 +1,1 @@
-Update design: modern hero, course cards with photos, Google Fonts Inter, improved colors and layout.
+Site redesign: Vibrant Gradient theme applied (option A). Hero uses purple→cyan gradient, badges and colored course cards added. Images are Unsplash placeholders. If you want different images or a logo, send files and I will replace them.

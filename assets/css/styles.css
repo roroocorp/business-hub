@@ -1,40 +1,49 @@
-/* Modern styles pour Business Hub */
+/* Vibrant Gradient Theme for Business Hub */
 :root{
-  --bg: #f5f7fb;
-  --card: #ffffff;
-  --text: #0f1724;
-  --muted: #6b7280;
-  --accent: linear-gradient(90deg,#0ea5e9,#6366f1);
-  --accent-color: #0ea5e9;
-  --radius: 12px;
+  --bg: #0f1724; /* dark base under hero */
+  --site-bg: #0b1020;
+  --card-bg: rgba(255,255,255,0.02);
+  --text: #e6eef8;
+  --muted: #9fb4d6;
+  --accent-start: #7c3aed; /* violet */
+  --accent-end: #06b6d4; /* cyan */
+  --btn-color: linear-gradient(90deg,var(--accent-start),var(--accent-end));
+  --radius: 14px;
 }
 *{box-sizing:border-box}
-body{font-family:Inter,Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+body{font-family:Inter,Arial,Helvetica,sans-serif;margin:0;background:linear-gradient(180deg,#020617 0%, #071025 60%);color:var(--text);-webkit-font-smoothing:antialiased}
 .container{max-width:1100px;margin:0 auto;padding:28px}
-.site-header{background:transparent;padding:12px 0}
+.site-header{background:transparent;padding:18px 0}
 .header-inner{display:flex;align-items:center;justify-content:space-between}
-.logo{font-weight:700;font-size:20px;letter-spacing:0.2px}
-.main-nav a{margin-left:18px;color:var(--text);text-decoration:none;font-weight:600}
-.hero{background-image:linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.05)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=60');background-size:cover;background-position:center;color:#fff;padding:64px 0;border-radius:16px;margin:20px 28px}
+.logo{font-weight:700;font-size:20px;color:#fff}
+.main-nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600}
+.hero.vibrant-hero{padding:56px 0;border-radius:16px;margin:8px 28px;background:linear-gradient(135deg, rgba(124,58,237,0.85), rgba(6,182,212,0.85));box-shadow:0 18px 40px rgba(6,11,23,0.5)}
 .hero-inner{display:flex;gap:24px;align-items:center}
-.hero-text{flex:1}
-.hero-text h2{font-size:36px;margin:0 0 12px;font-weight:700}
-.lead{opacity:0.95;font-size:16px;margin-bottom:18px}
-.hero-aside{width:240px;display:flex;flex-direction:column;gap:12px}
-.card.small{background:rgba(255,255,255,0.06);padding:12px;border-radius:10px}
-.card.small h4{margin:0 0 6px}
-.btn{background:var(--accent-color);color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+.hero-text{flex:1;color:#fff}
+.hero-text h2{font-size:40px;margin:0 0 12px;font-weight:800;letter-spacing:-0.4px}
+.lead{opacity:0.95;font-size:17px;margin-bottom:18px}
+.hero-aside{width:260px;display:flex;flex-direction:column;gap:12px}
+.card.small{background:rgba(255,255,255,0.08);padding:14px;border-radius:12px;color:#fff}
+.card.small.muted{background:rgba(0,0,0,0.12)}
+.btn-cta{display:inline-block;padding:12px 18px;border-radius:12px;color:#0b1020;font-weight:800;text-decoration:none;background:var(--btn-color)}
 .courses-section{margin-top:28px}
-.courses-section h3{margin:10px 0 18px}
+.courses-section h3{color:var(--text);margin:10px 0 18px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-.course-card{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(15,23,36,0.06);transition:transform .18s ease,box-shadow .18s ease}
-.course-card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(2,6,23,0.12)}
-.course-card img{width:100%;height:150px;object-fit:cover;display:block}
-.course-card .card-body{padding:14px}
-.course-card h4{margin:0 0 6px}
+.course-card{background:transparent;border-radius:12px;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease}
+.course-card .card-media{position:relative}
+.course-card img{width:100%;height:180px;object-fit:cover;display:block;border-radius:12px}
+.badge{position:absolute;left:12px;top:12px;padding:8px 12px;border-radius:999px;font-weight:700;color:#061226;background:rgba(255,255,255,0.9)}
+.badge.orange{background:linear-gradient(90deg,#ff8a00,#ff3d00);color:#fff}
+.badge.purple{background:linear-gradient(90deg,#7c3aed,#a78bfa);color:#fff}
+.badge.blue{background:linear-gradient(90deg,#06b6d4,#0ea5e9);color:#022126}
+.badge.green{background:linear-gradient(90deg,#10b981,#34d399);color:#022126}
+.badge.yellow{background:linear-gradient(90deg,#f59e0b,#f97316);color:#022126}
+.course-card .card-body{padding:14px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:0 0 12px 12px}
+.course-card h4{margin:0 0 8px;color:var(--text);font-weight:700}
 .course-card p{margin:0;color:var(--muted)}
+.course-card:hover{transform:translateY(-8px);box-shadow:0 20px 50px rgba(2,6,23,0.6)}
 .features{display:flex;gap:18px;margin:36px 28px}
-.feature{background:var(--card);padding:18px;border-radius:12px;flex:1;box-shadow:0 6px 18px rgba(15,23,36,0.04)}
+.feature{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;flex:1;color:var(--muted)}
 .site-footer{margin-top:48px;padding:28px 0;background:transparent}
 .footer-inner{display:flex;justify-content:space-between;align-items:center}
 .muted{color:var(--muted)}
